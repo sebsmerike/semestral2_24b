@@ -8,8 +8,7 @@ public class Player : MonoBehaviour
 
     void Awake () {
         board = new BoardPlayer ();
-        board.initBoard();
-
+        
         Debug.Log(board.posX + " " + board.getSize());
         Debug.Log(board.ToString());
     }

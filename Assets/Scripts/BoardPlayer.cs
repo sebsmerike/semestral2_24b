@@ -6,13 +6,11 @@ public class BoardPlayer : Board
 {
     public int posX, posY;
 
-    void initBoard()
+    public BoardPlayer() : base()
     {
-        base.initBoard();
-
         // calcular center
-        posX = 3;
-        posY = 0;
+        posY = Mathf.FloorToInt(size / 2f);
+        posX = 0;
 
         tablero[posX, posY] = 2;
 

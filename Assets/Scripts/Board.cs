@@ -8,7 +8,7 @@ public class Board
     public const int enemyProb = 2;
     protected int[,] tablero;
     
-    public void initBoard()
+    public Board()
     {
         tablero = new int[size, size];
         resetBoard();

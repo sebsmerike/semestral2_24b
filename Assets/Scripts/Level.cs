@@ -9,7 +9,6 @@ public class Level : MonoBehaviour
     void Awake()
     {
         tablero = new Board();
-        tablero.initBoard();
     }
 
     // Start is called before the first frame update
