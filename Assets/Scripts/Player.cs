@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    BoardPlayer board;
+
+    void Awake () {
+        board = new BoardPlayer ();
+        board.initBoard();
+
+        Debug.Log(board.posX + " " + board.getSize());
+        Debug.Log(board.ToString());
+    }
+
     void Start()
     {
         
@@ -13,6 +22,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log(board.posX + " " + board.getSize());
+            Debug.Log(board.ToString());
+        }
     }
 }
